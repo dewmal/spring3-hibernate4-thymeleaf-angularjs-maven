@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="main-app">
+<head>
+    <meta charset="utf-8"/>
+    <title>TukTuk - Blog Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="./static/css/tuktuk.css"/>
+    <link rel="stylesheet" href="./static/css/tuktuk.theme.css"/>
+    <link rel="stylesheet" href="./static/css/tuktuk.icons.css"/>
+    <style>
+        body > header .logo {
+            margin-top: 8px;
+            margin-right: 8px;
+            max-height: 30px;
+        }
+
+        body > footer img {
+            height: 18px;
+            position: relative;
+            top: 5px;
+            left: 2px;
+        }
+
+        div.img.avatar {
+            height: 46px;
+            width: 46px;
+            float: left;
+            margin: 1%;
+        }
+    </style>
+</head>
+
+<body class="text thin" ng-controller="MainCntl">
+<header class="bck light padding">
+    <div class="row">
+        <div class="column_6">
+            <img src="../images/logo-color.png" class="logo on-left"/>
+
+            <h2 class="text italic thin">Blog Template</h2>
+        </div>
+        <nav class="column_6  text right bold">
+            <a href="#">Login</a>
+            <a href="#" class="button small">Signup</a>
+        </nav>
+    </div>
+</header>
+
+
+<ng-view>
+</ng-view>
+
+
+<footer class="bck dark padding">
+    <div class="row margin-top margin-bottom">
+        <div class="column_5">
+            <p class="text bold big">Handcrafted by <a href="http://tapquo.com" class="display inline"><img
+                    src="http://cdn.tapquo.com/images/logo_footer.png"/></a></p>
+            We're a user experiences company located in <span class="text normal">Bilbao</span>, ES.
+        </div>
+        <div class="column_4">
+            <p class="text bold big">Join the team!</p>
+            Let us know how you're! <a href="mailto:hello@tapquo.com?subject=job" class="text underline color theme">Get
+            in touch</a>
+        </div>
+        <div class="column_3">
+            <p class="text bold big">Need some help?</p>
+            For quick answers or help <a href="https://twitter.com/tapquo" target="_blank"
+                                         class="text underline color theme">follow us</a>
+        </div>
+    </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="./static/js/angular.min.js"></script>
+<script src="./static/app/main.js"></script>
+<script src="./static/js/tuktuk.js"></script>
+</body>
+</html>
